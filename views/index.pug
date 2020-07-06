@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title MY APP
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+    // <link rel="stylesheet" href="/css/salesExecutive.css">
+  body
+    h2 May Node and express be with you. 
+    form(method="POST" action="/register")
+      label REGISTER FORM
+      br
+      br
+      label  Name: 
+      input(type="text" name="firstName" placeholder="Enter first name..." required="")
+      br
+      br
+      label(for="nickName") Nick Name: 
+      input(type="text" name="nickName" placeholder="Enter nick name..." required="")
+      br
+      br
+      label(for="Email") Email: 
+      input#Email(type="email" name="Email" placeholder="Email" required="")
+      br
+      br
+      label(for="dob") birthday: 
+      input(type="date" id="Date of birth" name="Date of birth" placeholder="Date of birth" required="")
+      br
+      br
+      label password
+      input(type="password" name="password" placeholder="enter password")
+      br
+      br
+      label Gender
+      .radio
+        label
+          input(type="radio" name="optradio" checked="")
+          | Female
+      .radio
+        label
+          input(type="radio" name="optradio")
+          | Male
+      input(type="submit" value="Submit Form")

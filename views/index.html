@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY APP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/css/salesExecutive.css"> -->
+</head>
+<body>
+    
+     <h2>May Node and express be with you. </h2> 
+     
+    <form method="POST" action="/register">
+        <label>REGISTER FORM</label><br><br>
+        <label> Name: </label>
+        <input type="text" name="firstName" name="username" placeholder="Enter first name..." required><br><br>
+        <label for="nickName">Nick Name: </label>
+        <input type="text" name="nickName" placeholder="Enter nick name..." required><br><br>
+        <label for="Email">Email: </label>
+        <input type="email" id="Email" name="Email"  placeholder="Email" required><br><br>
+        <label for="dob">birthday: </label>
+        <input type="date" id="Date of birth" name="Date of birth"  placeholder="Date of birth" required><br><br>
+        <label>password</label>
+        <input type="password" name="password" placeholder="enter password" /><br><br>
+        <label>Gender</label>
+        <div class="radio">
+            <label><input type="radio" name="optradio" checked>Female</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio">Male</label>
+          </div>
+              
+        <input type="submit" value="Submit Form">
+    </form>
+  
+</body>
+</html>
